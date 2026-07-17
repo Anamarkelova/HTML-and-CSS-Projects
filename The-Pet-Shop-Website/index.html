@@ -1,86 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>The Pet Shop</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="The Pet Shop offers cats,dogs, rabbits, guinea pigs, fish, reptiles, pet videos. ">
-    </head>
-    <body>
-      <!--NAVBAR-->
-      <nav>
-        <ul>
+
+<head>
+    <title>The Pet Shop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="The Pet Shop offers cats,dogs, rabbits, guinea pigs, fish, reptiles, pet videos. ">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul id="nav-border">
             <li><a href="index.html">HOME</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <ul>
-            <a href="#cat"><li>Cats & Kittens</li></a>
-            <a href="#dog"><li>Dogs & Puppies</li></a>
-            <a href="#rabbit"><li>Rabbits</li></a>
-            <a href="#guineapig"><li>Guinea Pigs</li></a>
-            <a href="#fish"><li>Fish</li></a>
-            <a href="#reptile"><li>Reptiles</li></a>
-            <a href="#video"><li>Videos</li></a>
+            <a href="#cat">
+                <li>Cats & Kittens</li>
+            </a>
+            <a href="#dog">
+                <li>Dogs & Puppies</li>
+            </a>
+            <a href="#rabbit">
+                <li>Rabbits</li>
+            </a>
+            <a href="#guineapig">
+                <li>Guinea Pigs</li>
+            </a>
+            <a href="#fish">
+                <li>Fish</li>
+            </a>
+            <a href="#reptile">
+                <li>Reptiles</li>
+            </a>
+            <a href="#video">
+                <li>Videos</li>
+            </a>
         </ul>
-      </nav> 
-      <!--HEADER-->
-      <header>
+    </nav>
+    <!--HEADER-->
+    <header>
         <div>
-            <h1>Welcome to The Pet Shop!</h1>
+            <h1 class="animate-text">Welcome to The Pet Shop!</h1>
         </div>
-      </header>
-      <blockquote>
+    </header>
+    <blockquote>
         "Until one has loved an animal, a part of one's soul remains unawakened."<br>
         - Anatole France
-      </blockquote>
-      <!--PET IMAGES-->
-      <section>
-        <div>
+    </blockquote>
+    <!--PET IMAGES-->
+    <section>
+        <div class="container">
             <h2>Choose a Pet!</h2>
             <div>
                 <!--CAT IMAGES-->
-                <div id="cat">
-                    <h3>Cats & Kittens</h3>
-                    <img src="images/cat.png" alt="Picture of kittens">
+                <div id="cat" class="column">
+                    <div class="image-container">
+                        <h3>Cats & Kittens</h3>
+                        <img src="images/cat.png" alt="Picture of kittens">
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--DOG IMAGES-->
-                <div id="dog">
-                    <h3>Dogs & Puppies</h3>
-                    <img src="images/dog.png" alt="Picture of dogs">  
+                <div id="dog" class="column">
+                    <div class="image-container">
+                        <h3>Dogs & Puppies</h3>
+                        <img src="images/dog.png" alt="Picture of dogs">
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--Rabbit IMAGES-->
-                <div id="rabbit">
-                    <h3>Rabbits</h3>
-                    <img src="images/rabbits.png" alt="Picture of rabbits">
+                <div id="rabbit" class="column">
+                    <div class="image-container">
+                        <h3>Rabbits</h3>
+                        <img src="images/rabbits.png" alt="Picture of rabbits">
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--GUINEA PIG IMAGES-->
-                <div id="guineapig">
-                    <h3>Guinea Pigs</h3>
-                    <img src="images/guineapigs.png" alt="Picture of guinea pigs">
+                <div id="guineapig" class="column">
+                    <div class="image-container">
+                        <h3>Guinea Pigs</h3>
+                        <img src="images/guineapigs.png" alt="Picture of guinea pigs">
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--FISH IMAGES-->
-                <div id="fish">
-                    <h3>Fish</h3>
-                    <img src="images/fish.png" alt="Picture of goldfish">
+                <div id="fish" class="column">
+                    <div class="image-container">
+                        <h3>Fish</h3>
+                        <img src="images/fish.png" alt="Picture of goldfish">
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--REPTILE IMAGES-->
-                <div id="reptile">
-                    <h3>Reptiles</h3>
-                    <img src="images/beardedDragon.png" alt="Picture of bearded dragons">
+                <div id="reptile" class="column">
+                    <div class="image-container">
+                        <h3>Reptiles</h3>
+                        <img src="images/beardedDragon.png" alt="Picture of bearded dragons">
+                        <div class="overlay"></div>
+                    </div>
                 </div>
             </div>
-      </section>
-      <!--VIDEOs-->
-      <section>
+    </section>
+    <!--VIDEOs-->
+    <section>
         <!--DOG VIDEO-->
-        <div id="video">
+        <div id="video" class="container">
             <h3>Videos</h3>
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
-        </div> 
-        </section>
-      </section>
-      
-      <!--FOOTER-->
-      <footer>
+        </div>
+    </section>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
         <table>
             <tr>
                 <td>
@@ -95,8 +131,7 @@
                 </td>
             </tr>
         </table>
-      </footer>
-    </body>
-</html>
+    </footer>
+</body>
 
- 
+</html>
