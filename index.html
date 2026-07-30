@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Anastasia's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+</head>
+
+<!--Body-->
+
+<body class="Background">
+
+    <!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Background video-->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="images/video/Typing.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Anastasia's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>
+                    The expert at anything was once a beginner
+                </q>
+                <br> - Helen Hayes
+                <br>
+                <br>
+                Welcome to my portfolio website.
+                <br>
+                My name is Anastasia. I am currently learning web development and building my skills in HTML and CSS.
+                <br>
+                This website shows my projects, experience, and my journey as a future web developer.
+                <br>
+                <br>
+                Thank you for visiting my portfolio!
+            </p>
+        </strong>
+    </div>
+
+    <!--About section-->
+    <div class="Row" id="About">
+        <!--Left column-->
+        <div class="Column_2">
+            <img class="profile-image" src="images/profile.jpg" alt="Anastasia profile picture">
+        </div>
+
+        <!--Right column-->
+        <div class="Column_1">
+            <h1>About Me</h1>
+            <p>
+                I am a student learning web development and improving my skills in creating websites.
+                <br>
+                <br>
+                During my studies, I have learned how to build webpages using HTML and CSS, create layouts, add images,
+                design navigation menus, and style websites.
+                <br>
+                <br>
+                My projects include a Simple Recipes website, a One-Page Travel Website, and different CSS practice
+                projects.
+                <br>
+                <br>
+                My goal is to continue developing my programming skills and create professional websites.
+            </p>
+        </div>
+    </div>
+
+    <!--GitHub section-->
+    <div class="Row" id="GitHub">
+
+        <!--Left column-->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>
+                You can view my coding projects and follow my development progress on my GitHub profile:
+            </p>
+
+            <p class="center">
+                <a href="https://github.com/Anamarkelova" target="_blank">
+                    My GitHub Profile
+                </a>
+            </p>
+        </div>
+
+        <!--Right column-->
+        <div class="Column_2">
+            <a href="https://github.com/Anamarkelova" target="_blank">
+                <img src="images/GitHub.png" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+
+    <!--Contact section-->
+    <div class="Row" id="Contact">
+
+        <!--Contact image-->
+        <div class="Column_2 Column_tall">
+            <img src="images/contact.jpg" alt="Contact Image">
+        </div>
+
+        <!--Contact form-->
+        <div class="Column_1 Column_tall">
+            <h1>Contact</h1>
+            <form action="" method="POST">
+                <label>Name:</label>
+                <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <p class="center">
+            © 2026 Anastasia's Portfolio
+            <br>
+            Created with HTML and CSS
+        </p>
+    </footer>
+</body>
+
+</html>

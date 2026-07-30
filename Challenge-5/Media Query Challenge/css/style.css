@@ -1,0 +1,17 @@
+/* Default styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    p {
+        color: blue;
+    }
+}
