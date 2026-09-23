@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 70px; /* Prevent content from hiding behind the fixed navbar */
+}
+
+/* Fixed navigation bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkgreen;
+    overflow: hidden;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+/* Navigation links */
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+/* Image styling */
+.center-image {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 20px;
+    filter: grayscale(40%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Text over image */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: lightgreen;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Two-column layout */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.column {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: darkgreen;
+    border: 1px solid #ccc;
+}
+
+/* Paragraph styling */
+.hover-text {
+    font-size: 18px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.hover-text:hover {
+    color: darkgreen;
+    cursor: pointer;
+}
+
+/* Image overlay container */
+.overlay-container {
+    position: relative;
+    width: 500px;
+    margin: 30px auto;
+}
+
+/* Image */
+.overlay-image {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 100, 0, 0.7);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Show overlay on hover */
+.overlay-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Overlay text */
+.overlay-text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Video*/
+video {
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Video container */
+.video-container {
+    position: relative;
+    width: 600px;
+    margin: 30px auto;
+}
+
+/* Video */
+.video-container video {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Text overlay */
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}

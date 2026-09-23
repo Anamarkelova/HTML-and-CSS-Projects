@@ -1,0 +1,394 @@
+/***** GENERAL STYLING *****/
+
+/* Body */
+body {
+    margin: 0;
+    background-color: #eee9f5;
+    color: #332d3d;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+
+/* Heading 1 elements */
+h1 {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    color: #765a91;
+    letter-spacing: 2px;
+}
+
+
+/* Heading hover effect */
+h1:hover {
+    color: #4f3b61;
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+
+/* Portfolio title text */
+.white-text {
+    color: white;
+}
+
+
+/* Paragraph elements */
+p {
+    font-family: "Georgia", serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Paragraph hover effect */
+p:hover {
+    transform: scale(1.02);
+    transition: transform 1s;
+}
+
+
+/* Center class */
+.center {
+    text-align: center;
+}
+
+
+/* Center hover effect */
+.center:hover {
+    transform: scale(1.05);
+    transition: transform 1s;
+}
+
+
+/* Links */
+a {
+    color: #765a91;
+    text-decoration: none;
+}
+
+
+/* Link hover */
+a:hover {
+    color: #4f3b61;
+    text-decoration: underline;
+}
+
+
+/* Quote */
+q {
+    font-style: italic;
+    color: #ffffff;
+}
+
+
+/* Images */
+img {
+    filter: grayscale(20%);
+    border-radius: 15px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Image hover effect */
+img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.08);
+    transition: transform 1s;
+}
+
+
+/* Mobile image styling */
+@media screen and (max-width: 576px) {
+
+    img {
+        height: 150px;
+        margin-top: 50px;
+    }
+
+}
+
+
+/* Footer */
+footer {
+    padding: 2%;
+    background-color: #4f3b61;
+    color: white;
+}
+
+
+/***** END OF GENERAL STYLING *****/
+
+
+/***** NAVBAR STYLING *****/
+
+.Navbar {
+    overflow: hidden;
+    background-color: #4f3b61;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+
+/* Navbar animation */
+@keyframes moveNav {
+    from {
+        left: -100vw;
+    }
+
+    to {
+        left: 0vw;
+    }
+}
+
+
+/* Navbar links */
+.Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+
+/* Navbar text animation */
+@keyframes moveNavText {
+    from {
+        top: -100vw;
+    }
+
+    to {
+        top: 0vw;
+    }
+}
+
+
+/* Screens 576px and smaller */
+@media screen and (max-width: 576px) {
+
+    .Navbar a {
+        width: 25%;
+        font-size: 12px;
+    }
+
+}
+
+
+/* Navbar hover effects */
+.Navbar a:hover {
+    background-color: #d6c7df;
+    color: #4f3b61;
+    font-weight: bold;
+}
+
+
+/* Navbar home button */
+.Navbar a.active {
+    background-color: #765a91;
+}
+
+
+/***** END OF NAVBAR STYLING *****/
+
+
+/***** VIDEO STYLING *****/
+
+/* Background video */
+#Typing_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+
+/* Screens 576px and smaller */
+@media screen and (max-width: 576px) {
+
+    #Typing_Video {
+        display: none;
+    }
+
+}
+
+
+/* Text over the video */
+.Video_Text {
+    background: rgba(79, 59, 97, 0.78);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+
+/* Video text animation */
+@keyframes moveVideoText {
+    from {
+        top: -100vw;
+    }
+
+    to {
+        top: 0vw;
+    }
+}
+
+
+/***** END OF VIDEO STYLING *****/
+
+
+/***** TABLE STYLING *****/
+
+* {
+    box-sizing: border-box;
+}
+
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    padding-top: 3%;
+    min-height: 500px;
+    background-color: #f8f5fa;
+}
+
+
+/* Screens 576px and smaller */
+@media screen and (max-width: 576px) {
+
+    .Column_1 {
+        overflow: auto;
+    }
+
+}
+
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    padding-top: 3%;
+    min-height: 500px;
+    background-color: #d6c7df;
+}
+
+
+/* Final row styling */
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+
+/* Clear floating rows */
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/***** END OF TABLE STYLING *****/
+
+
+/***** CONTACT FORM STYLING *****/
+
+/* Text input fields */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b7a4c4;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 8px #9b82aa inset;
+}
+
+
+/* Submit button */
+input[type=submit] {
+    background-color: #765a91;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+    background-color: #4f3b61;
+    color: white;
+    transform: scale(1.08);
+    transition: transform 0.5s;
+}
+
+
+/* Form element */
+form {
+    border-radius: 10px;
+    background-color: #eee9f5;
+    padding: 15px;
+    font-family: "Trebuchet MS", Optima;
+}
+
+
+/* Profile image styling */
+.profile-image {
+    width: 85%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px auto;
+    filter: grayscale(10%);
+    border: 3px solid #765a91;
+}
+
+
+/* Profile image hover effect */
+.profile-image:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    transition: transform 0.8s;
+}
+
+
+/***** END OF CONTACT FORM STYLING *****/
